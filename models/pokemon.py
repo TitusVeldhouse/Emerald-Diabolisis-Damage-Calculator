@@ -15,6 +15,7 @@ class Pokemon:
         self.ability = ""
         self.item = ""
         self.moves[4] = []
+        self.image = None
 
     def __repr__(self):
         return f"{self.name} ({self.type1}/{self.type2})"
