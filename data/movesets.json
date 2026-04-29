@@ -1,0 +1,16 @@
+{
+
+  "_comment": "movesets[pokemon] returns a list of moves with their level.",
+
+  "Sableye": [
+    {"move": "ASTONISH", "level": 1},
+    {"move": "POWDER SNOW", "level": 5},
+    {"move": "ICE PUNCH", "level": 20},
+    {"move": "PERISH SONG", "level": 25},
+    {"move": "SHADOW BALL", "level": 35}
+  ],
+
+  "Pidgey": [
+    {"move": "EMBER", "level": 6}
+  ]
+}
