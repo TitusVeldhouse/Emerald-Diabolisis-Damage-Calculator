@@ -1,12 +1,11 @@
 # pokemon.py creates a Pokemon class    
-
-from pkmnDict import POKEDEX, MOVESETS
+from models.packager import POKEDEX, MOVESETS
 
 
 class Pokemon:
     def __init__(self, name):
         """
-        Creates a Pokemon object by pulling data from pkmnDict.
+        Creates a Pokemon object by pulling data from packager.
         """
         self.name = name
 
@@ -26,6 +25,8 @@ class Pokemon:
         self.speed = base.speed
 
         # Moveset pulled from MOVESETS (fallback to empty list)
+
+        # !! Update to be 4 moveslots versus moveset
         self.moves = MOVESETS.get(name, [])
 
     def get_moves(self):

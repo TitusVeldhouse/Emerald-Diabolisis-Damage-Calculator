@@ -1,4 +1,4 @@
-from pkmnDict import POKEDEX, load_pokemon
+from models.packager import POKEDEX, load_pokemon
 
 class Team:
     def __init__(self, name):
