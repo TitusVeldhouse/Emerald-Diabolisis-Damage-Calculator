@@ -1,7 +1,6 @@
 # pokemon.py creates a Pokemon class    
 from models.packager import POKEDEX, MOVESETS
 
-
 class Pokemon:
     def __init__(self, name):
         """
@@ -24,6 +23,9 @@ class Pokemon:
         self.sp_def = base.sp_def
         self.speed = base.speed
 
+        # Implement later
+        self.level = 100
+
         # Moveset pulled from MOVESETS (fallback to empty list)
 
         # !! Update to be 4 moveslots versus moveset
@@ -37,11 +39,12 @@ class Pokemon:
         """Returns stats as a dictionary (useful for UI/API)"""
         return {
             "hp": self.hp,
-            "attack": self.attack,
+            "attack": self.atk,
             "defense": self.defense,
             "sp_atk": self.sp_atk,
             "sp_def": self.sp_def,
             "speed": self.speed,
+            "level": self.level
         }
 
     def __repr__(self):
